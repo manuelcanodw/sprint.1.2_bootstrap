@@ -1,0 +1,88 @@
+$primary: #5265E1;
+$secondary: #FA5959;
+$danger: grey;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger,
+);
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+/*features*/
+.imgn {
+  max-width: 80%;
+}
+
+.nav-underline .nav-link.active {
+  border-bottom-color:#FA5959;
+}
+.nav-link {
+  color:black;
+}
+.nav-link:hover{
+  color: #FA5959;
+}
+.imgtap { 
+  width: 28vw;
+  @media (max-width: 768px) {
+    width: 60vw;
+    height: 60vw;
+    
+  }
+}
+
+.forma-fondo-izquierda {
+  width: 35vw;
+  height: 20vw;
+  background-color: #5265E1;
+  border-radius: 0 15vw 15vw 0;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    width: 130vw;
+    height: 40vw;
+    border-radius: 0 15vw 15vw 0;
+    left: 60%;
+    transform: translateX(-50%);
+  }
+}
+
+/*acordeon*/
+.accordion-item {
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.accordion-button:hover {
+  color: #FA5959;
+}
+
+.accordion-item:first-of-type {
+  border-top: 1px solid #dee2e6;
+}
+
+.accordion-item:last-of-type {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.accordion-button:not(.collapsed)::after {
+   
+  background-color: $secondary;
+}
+.accordion-button::after {
+  color: #000; 
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white;
+}
+.accordion-button:focus {
+  box-shadow:none;
+}
+
+.footer-nav{
+  background-color: #242946;
+}
